@@ -1,0 +1,7 @@
+<material>
+	<technique name="Techniques/DiffAlpha.xml" />
+  <texture unit="diffuse" name="Textures/Arrow02.png" />
+	<parameter name="MatDiffColor" value="0.7 0.0 0.0 1" />
+	<parameter name="MatSpecColor" value="0.9 0.0 0.0 1" />
+	<parameter name="MatEmissiveColor" value="0.1 0.1 0.1 1" />
+</material>

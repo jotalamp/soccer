@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<material>
+	<technique name="Techniques/Diff.xml" />
+	<texture unit="diffuse" name="Textures/soccerPlayerClothes16_2.png" />
+	<parameter name="MatDiffColor" value="0.1 0.1 0.1 1" />
+	<parameter name="MatSpecColor" value="0.9 0.9 0.9 1" />
+	<parameter name="MatEmissiveColor" value="0.1 0.1 0.1 1" />
+	<depthbias constant="-0.0000007"  />
+</material>

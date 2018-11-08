@@ -1,0 +1,9 @@
+<material>
+    <technique name="Techniques/Diff.xml" />
+    <texture unit="diffuse" name="Textures/LogoLarge.png" />
+    <parameter name="MatSpecColor" value="0.5 0.5 0.5 16" />
+		<parameter name="MatDiffColor" value="0.9 0.9 1 1" />
+		<parameter name="MatEmissiveColor" value="0.0 0.0 0.9" />
+    <parameter name="UOffset" value="16 0 0 0" />
+		<parameter name="VOffset" value="0 1 0 0" />
+</material>

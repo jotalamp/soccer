@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="Scene01" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="14561.5" />
+	<attribute name="Next Replicated Node ID" value="25" />
+	<attribute name="Next Replicated Component ID" value="46" />
+	<attribute name="Next Local Node ID" value="16777803" />
+	<attribute name="Next Local Component ID" value="16777639" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="DebugRenderer" id="2" />
+	<component type="PhysicsWorld" id="5" />
+	<node id="16777217">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerGoalAPosts" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="50 0 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777232">
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+			<attribute name="Material" value="Material;Materials/Soccer/SoccerPosts01.xml" />
+			<attribute name="Is Occluder" value="true" />
+			<attribute name="Can Be Occluded" value="false" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="CollisionShape" id="16777250">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+		</component>
+		<component type="RigidBody" id="16777251">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="50 0 0" />
+			<attribute name="Restitution" value="0.9" />
+		</component>
+		<node id="16777258">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="SoccerGoalANet" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16777285">
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet03.mdl" />
+				<attribute name="Material" value="Material;Materials/Soccer/SoccerNet02.xml" />
+				<attribute name="Cast Shadows" value="true" />
+			</component>
+			<component type="CollisionShape" id="16777398">
+				<attribute name="Shape Type" value="TriangleMesh" />
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet02T3.mdl" />
+				<attribute name="Collision Margin" value="0.1" />
+			</component>
+			<component type="RigidBody" id="16777400">
+				<attribute name="Physics Position" value="50 0 0" />
+				<attribute name="Collision Event Mode" value="Always" />
+			</component>
+			<node id="16777790">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="SoccerGoalATrigger" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="1.1 1.2 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1.74 2.4 7.3" />
+				<attribute name="Variables" />
+				<component type="CollisionShape" id="16777509" />
+				<component type="RigidBody" id="16777510">
+					<attribute name="Physics Position" value="51.1 1.2 0" />
+					<attribute name="Collision Event Mode" value="Always" />
+					<attribute name="Is Trigger" value="true" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16777247">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerField" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.5 0" />
+		<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+		<attribute name="Scale" value="80 1 110" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777234">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/SoccerField.xml" />
+		</component>
+		<component type="CollisionShape" id="16777248">
+			<attribute name="Size" value="2 1 2" />
+		</component>
+		<component type="RigidBody" id="16777249">
+			<attribute name="Physics Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Physics Position" value="0 -0.5 0" />
+			<attribute name="Friction" value="0.9" />
+			<attribute name="Rolling Friction" value="0.01" />
+			<attribute name="Restitution" value="0.6" />
+		</component>
+	</node>
+	<node id="16777248">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Light01" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 15.5291 0" />
+		<attribute name="Rotation" value="0.794296 0.593132 0.13112 0.00973597" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="16777235">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Specular Intensity" value="0.9" />
+			<attribute name="Brightness Multiplier" value="0.9" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Distance" value="0.1" />
+			<attribute name="Shadow Intensity" value="0.3" />
+		</component>
+	</node>
+	<node id="16777250">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerGoalBPosts" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-50 0 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777254">
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+			<attribute name="Material" value="Material;Materials/Soccer/SoccerPosts01.xml" />
+			<attribute name="Is Occluder" value="true" />
+			<attribute name="Can Be Occluded" value="false" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="CollisionShape" id="16777255">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Soccer/SoccerNet01.mdl" />
+		</component>
+		<component type="RigidBody" id="16777256">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="-50 0 0" />
+			<attribute name="Restitution" value="0.9" />
+		</component>
+		<node id="16777259">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="SoccerGoalBNet" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="0.00164777 -0.00164777 0.707117 -0.707117" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16777287">
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet02T3.mdl" />
+				<attribute name="Material" value="Material;Materials/Net02.xml" />
+			</component>
+			<component type="CollisionShape" id="16777288">
+				<attribute name="Shape Type" value="TriangleMesh" />
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet02T3.mdl" />
+				<attribute name="Collision Margin" value="0.2" />
+			</component>
+			<component type="RigidBody" id="16777290">
+				<attribute name="Physics Rotation" value="0.00233027 0 0.999997 0" />
+				<attribute name="Physics Position" value="-50 0 0" />
+				<attribute name="Restitution" value="0.01" />
+				<attribute name="Collision Event Mode" value="Always" />
+			</component>
+			<node id="16777791">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="SoccerGoalBTrigger" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="1.1 1.2 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1.74 2.4 7.3" />
+				<attribute name="Variables" />
+				<component type="CollisionShape" id="16777512" />
+				<component type="RigidBody" id="16777513">
+					<attribute name="Physics Rotation" value="0.00233026 0 0.999997 0" />
+					<attribute name="Physics Position" value="-51.1001 1.20004 -0.0051673" />
+					<attribute name="Collision Event Mode" value="Always" />
+					<attribute name="Is Trigger" value="true" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16777252">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeA" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 40" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="106 1 0.1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777257">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777258" />
+		<component type="RigidBody" id="16777259">
+			<attribute name="Physics Position" value="0 0.5 40" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777253">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeB" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 -40" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="110 1 0.1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777260">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777261" />
+		<component type="RigidBody" id="16777262">
+			<attribute name="Physics Position" value="0 0.5 -40" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777254">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeC" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="55 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.1 1 76" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777263">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777264" />
+		<component type="RigidBody" id="16777265">
+			<attribute name="Physics Position" value="55 0.5 0" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777255">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeD" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-55 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.1 1 76" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777266">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777267" />
+		<component type="RigidBody" id="16777268">
+			<attribute name="Physics Position" value="-55 0.5 0" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Box" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Skybox" id="19">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Skybox.xml" />
+		</component>
+	</node>
+	<node id="16777329">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerBall3" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 1 0" />
+		<attribute name="Rotation" value="0.999991 -0.00402212 1.02812e-06 0.00126393" />
+		<attribute name="Scale" value="0.4 0.4 0.4" />
+		<attribute name="Variables" />
+	</node>
+	<node id="16777500">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerBall2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.001 0.001 0.001" />
+		<attribute name="Variables" />
+		<component type="CollisionShape" id="16777403">
+			<attribute name="Shape Type" value="Sphere" />
+			<attribute name="Size" value="220 220 220" />
+		</component>
+		<component type="RigidBody" id="16777404">
+			<attribute name="Physics Position" value="0 0.5 0" />
+			<attribute name="Mass" value="0.42" />
+			<attribute name="Friction" value="0.9" />
+			<attribute name="Rolling Friction" value="0.02" />
+			<attribute name="Restitution" value="0.8" />
+			<attribute name="Linear Damping" value="0.001" />
+			<attribute name="Angular Damping" value="0.35" />
+			<attribute name="Angular Rest Threshold" value="1.5" />
+			<attribute name="CCD Radius" value="0.1" />
+			<attribute name="CCD Motion Threshold" value="0.1" />
+		</component>
+		<component type="StaticModel" id="16777459">
+			<attribute name="Model" value="Model;Models/soccerBall08.mdl" />
+			<attribute name="Material" value="Material;Materials/White.xml;Materials/Black.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+	</node>
+	<node id="16777569">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerPlayer03" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="47 0 0" />
+		<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+		<attribute name="Scale" value="0.001 0.001 0.001" />
+		<attribute name="Variables" />
+		<component type="AnimatedModel" id="16777430">
+			<attribute name="Model" value="Model;Models/player03.mdl" />
+			<attribute name="Material" value="Material;Materials/Soccerplayer01SoccershortsandshirtTightsmaterial.xml;Materials/Soccerplayer01High-polyEyeblue.xml;Materials/Soccerplayer01BodyMiddleage_cauasian_male.xml" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Bone Animation Enabled">
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+				<variant type="Bool" value="true" />
+			</attribute>
+			<attribute name="Animation States">
+				<variant type="Int" value="1" />
+				<variant type="ResourceRef" value="Animation;Models/16_35_run.ani" />
+				<variant type="String" value="Soccerplayer01" />
+				<variant type="Bool" value="true" />
+				<variant type="Float" value="1" />
+				<variant type="Float" value="0.351227" />
+				<variant type="Int" value="0" />
+			</attribute>
+		</component>
+		<component type="AnimationController" id="16777431">
+			<attribute name="Node Animation States">
+				<variant type="Int" value="0" />
+			</attribute>
+		</component>
+		<component type="CollisionShape" id="16777599">
+			<attribute name="Shape Type" value="Capsule" />
+			<attribute name="Size" value="700 2000 1000" />
+			<attribute name="Offset Position" value="80 1150 1200" />
+			<attribute name="Model" value="Model;Models/player03.mdl" />
+		</component>
+		<component type="RigidBody" id="16777600">
+			<attribute name="Physics Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Physics Position" value="47 0 0" />
+			<attribute name="Mass" value="80" />
+			<attribute name="Angular Factor" value="0 0 0" />
+		</component>
+		<node id="16777749">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Soccerplayer01" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 -0" />
+			<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Scale" value="100 100 100" />
+			<attribute name="Variables" />
+			<node id="16777750">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="hips" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0.433743 4.59749 -12.5933" />
+				<attribute name="Rotation" value="0.615777 -0.786425 0.0445231 0.0192864" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<node id="16777751">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="spine" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="-5.33539e-08 1.55434 -8.25088e-08" />
+					<attribute name="Rotation" value="0.996129 -0.0608194 0.0374024 -0.0512675" />
+					<attribute name="Scale" value="0.999999 1 0.999999" />
+					<attribute name="Variables" />
+					<node id="16777752">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="chest" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="2.78211e-08 1.97438 9.23793e-07" />
+						<attribute name="Rotation" value="0.989458 0.0886885 0.0673146 0.0926041" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777753">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="neck" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-1.31711e-07 2.89419 -4.83659e-09" />
+							<attribute name="Rotation" value="0.995668 -0.0152435 0.0165581 -0.0902144" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<node id="16777754">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="head" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="4.39036e-08 1.42456 -5.58105e-07" />
+								<attribute name="Rotation" value="0.994783 0.0860668 -0.0054962 0.0544835" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<node id="16777755">
+									<attribute name="Is Enabled" value="true" />
+									<attribute name="Name" value="eye.L" />
+									<attribute name="Tags" />
+									<attribute name="Position" value="0.304061 0.396343 -0.878872" />
+									<attribute name="Rotation" value="0.539681 -0.635494 -0.414483 0.364823" />
+									<attribute name="Scale" value="1 1 1" />
+									<attribute name="Variables" />
+								</node>
+								<node id="16777756">
+									<attribute name="Is Enabled" value="true" />
+									<attribute name="Name" value="jaw" />
+									<attribute name="Tags" />
+									<attribute name="Position" value="2.38959e-08 0.061991 -0.19011" />
+									<attribute name="Rotation" value="0.425917 -0.904762 -0 0" />
+									<attribute name="Scale" value="1 1 1" />
+									<attribute name="Variables" />
+								</node>
+								<node id="16777757">
+									<attribute name="Is Enabled" value="true" />
+									<attribute name="Name" value="eye.R" />
+									<attribute name="Tags" />
+									<attribute name="Position" value="-0.304061 0.396343 -0.878872" />
+									<attribute name="Rotation" value="0.539681 -0.635494 0.414483 -0.364823" />
+									<attribute name="Scale" value="1 1 1" />
+									<attribute name="Variables" />
+								</node>
+							</node>
+						</node>
+						<node id="16777758">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="clavicle.R" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-0.239911 2.44503 -0.279236" />
+							<attribute name="Rotation" value="0.569005 0.4722 -0.46896 0.483051" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<node id="16777759">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="upper_arm.R" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="-0.100487 1.61284 0.71995" />
+								<attribute name="Rotation" value="-0.068339 -0.390912 -0.738696 -0.544836" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<node id="16777760">
+									<attribute name="Is Enabled" value="true" />
+									<attribute name="Name" value="forearm.R" />
+									<attribute name="Tags" />
+									<attribute name="Position" value="5.33242e-07 2.54379 -1.6341e-07" />
+									<attribute name="Rotation" value="0.519164 -0.700305 -2.6111e-07 -0.489941" />
+									<attribute name="Scale" value="1 1 1" />
+									<attribute name="Variables" />
+									<node id="16777761">
+										<attribute name="Is Enabled" value="true" />
+										<attribute name="Name" value="hand.R" />
+										<attribute name="Tags" />
+										<attribute name="Position" value="7.14651e-07 2.75026 3.33779e-07" />
+										<attribute name="Rotation" value="0.779288 -0.121251 0.614262 0.026273" />
+										<attribute name="Scale" value="1 1 1" />
+										<attribute name="Variables" />
+										<node id="16777762">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="thumb.02.R" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="0.493874 0.621472 -0.156762" />
+											<attribute name="Rotation" value="0.740429 0.0329764 0.583876 -0.331309" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+											<node id="16777763">
+												<attribute name="Is Enabled" value="true" />
+												<attribute name="Name" value="thumb.03.R" />
+												<attribute name="Tags" />
+												<attribute name="Position" value="7.19907e-07 0.424151 1.85933e-06" />
+												<attribute name="Rotation" value="0.984582 -0.169109 0.040103 0.019804" />
+												<attribute name="Scale" value="1 1 1" />
+												<attribute name="Variables" />
+											</node>
+										</node>
+										<node id="16777764">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="f_ring.01.R" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="-0.253039 1.08424 0.227838" />
+											<attribute name="Rotation" value="0.9745 -0.119135 -0.188874 -0.0219865" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+										</node>
+										<node id="16777765">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="f_index.01.R" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="0.26962 1.18536 0.191735" />
+											<attribute name="Rotation" value="0.984564 -0.127499 0.105716 -0.0565828" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+										</node>
+									</node>
+								</node>
+							</node>
+						</node>
+						<node id="16777766">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="clavicle.L" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0.239911 2.44503 -0.279236" />
+							<attribute name="Rotation" value="0.569005 0.4722 0.46896 -0.483051" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<node id="16777767">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="upper_arm.L" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0.100487 1.61284 0.719952" />
+								<attribute name="Rotation" value="-0.228609 -0.3228 0.657199 0.641582" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<node id="16777768">
+									<attribute name="Is Enabled" value="true" />
+									<attribute name="Name" value="forearm.L" />
+									<attribute name="Tags" />
+									<attribute name="Position" value="-4.14033e-07 2.5438 -3.00629e-07" />
+									<attribute name="Rotation" value="0.60524 -0.652331 0.000270211 0.456234" />
+									<attribute name="Scale" value="1 1 1" />
+									<attribute name="Variables" />
+									<node id="16777769">
+										<attribute name="Is Enabled" value="true" />
+										<attribute name="Name" value="hand.L" />
+										<attribute name="Tags" />
+										<attribute name="Position" value="1.59616e-07 2.75027 -4.39761e-07" />
+										<attribute name="Rotation" value="0.878531 -0.124053 -0.461285 -0.00327457" />
+										<attribute name="Scale" value="1 1 1" />
+										<attribute name="Variables" />
+										<node id="16777770">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="thumb.02.L" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="-0.493871 0.621472 -0.156762" />
+											<attribute name="Rotation" value="0.740219 0.0330958 -0.584143 0.331297" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+											<node id="16777771">
+												<attribute name="Is Enabled" value="true" />
+												<attribute name="Name" value="thumb.03.L" />
+												<attribute name="Tags" />
+												<attribute name="Position" value="1.51337e-07 0.424151 8.11279e-08" />
+												<attribute name="Rotation" value="0.984594 -0.169118 -0.0398197 -0.0197305" />
+												<attribute name="Scale" value="1 1 1" />
+												<attribute name="Variables" />
+											</node>
+										</node>
+										<node id="16777772">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="f_ring.01.L" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="0.253042 1.08424 0.227838" />
+											<attribute name="Rotation" value="0.9745 -0.119135 0.188874 0.0219865" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+										</node>
+										<node id="16777773">
+											<attribute name="Is Enabled" value="true" />
+											<attribute name="Name" value="f_index.01.L" />
+											<attribute name="Tags" />
+											<attribute name="Position" value="-0.269618 1.18536 0.191735" />
+											<attribute name="Rotation" value="0.984564 -0.127499 -0.105716 0.0565828" />
+											<attribute name="Scale" value="1 1 1" />
+											<attribute name="Variables" />
+										</node>
+									</node>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+				<node id="16777774">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="thigh.L" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="1.13836 0.784342 -0.0320166" />
+					<attribute name="Rotation" value="-0.0491873 -0.995936 0.066723 -0.0352228" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<node id="16777775">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="shin.L" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="-3.92527e-09 4.66457 -1.41013e-08" />
+						<attribute name="Rotation" value="0.944339 -0.323087 1.54974e-05 -0.0619591" />
+						<attribute name="Scale" value="0.999998 0.999998 0.999998" />
+						<attribute name="Variables" />
+						<node id="16777776">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="foot.L" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-1.08159e-07 4.54924 -1.15861e-07" />
+							<attribute name="Rotation" value="0.920495 0.365586 -0.122581 0.0633261" />
+							<attribute name="Scale" value="1 0.999999 1" />
+							<attribute name="Variables" />
+							<node id="16777777">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="toe.L" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="-1.8819e-07 1.50957 -1.86627e-07" />
+								<attribute name="Rotation" value="0.975019 0.222119 -8.61367e-05 -0.000667402" />
+								<attribute name="Scale" value="1 0.999999 1" />
+								<attribute name="Variables" />
+							</node>
+						</node>
+					</node>
+				</node>
+				<node id="16777778">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="thigh.R" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="-1.13836 0.784343 -0.0320165" />
+					<attribute name="Rotation" value="0.326356 -0.940525 -0.0241638 0.091218" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<node id="16777779">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="shin.R" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="7.01349e-09 4.66457 1.7432e-07" />
+						<attribute name="Rotation" value="0.983674 -0.176714 4.64596e-07 0.0340144" />
+						<attribute name="Scale" value="0.999999 0.999997 0.999999" />
+						<attribute name="Variables" />
+						<node id="16777780">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="foot.R" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="7.37059e-08 4.54924 2.8462e-07" />
+							<attribute name="Rotation" value="0.867202 0.493692 0.0462171 -0.0457542" />
+							<attribute name="Scale" value="1 0.999999 1" />
+							<attribute name="Variables" />
+							<node id="16777781">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="toe.R" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="1.87893e-08 1.50957 -2.09379e-07" />
+								<attribute name="Rotation" value="0.937372 0.348301 -0.000581511 -0.00436715" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node id="24">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Ground" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="140 0.99 100" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="45">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Ground.xml" />
+		</component>
+	</node>
+	<node id="16777798">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Stadium" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.5 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1 1 2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777586">
+			<attribute name="Model" value="Model;Models/Stadium02.mdl" />
+			<attribute name="Material" value="Material;Materials/Stadium01.xml" />
+		</component>
+		<component type="CollisionShape" id="16777601">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Stadium02.mdl" />
+		</component>
+		<component type="RigidBody" id="16777602">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="0 -0.5 0" />
+		</component>
+	</node>
+</scene>

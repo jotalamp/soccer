@@ -1,0 +1,45 @@
+3D Engine 
+	Urho3D
+		https://urho3d.github.io/
+		
+Modelling software
+	Blender
+		https://www.blender.org/
+	OpenScad
+		http://www.openscad.org/
+
+2D graphics
+	Inkscape
+		https://inkscape.org/
+	GIMP
+		https://www.gimp.org/
+	
+Animation editing
+	Blender
+	
+Models
+	player
+		MakeHuman
+		http://www.makehumancommunity.org/
+
+Textures
+	grass01.jpg
+		http://seamless-pixels.blogspot.com/p/free-seamless-ground-textures.html
+		
+Animations
+	All (some edited)
+		http://www.cgspeed.com/
+	
+Sounds
+	37156__volivieri__soccer-kick-01.wav
+		https://freesound.org/people/volivieri/
+		
+	424228__jeanpaul477__soccer-game.wav
+		https://freesound.org/people/jeanpaul477/
+		
+	whistle01.ogg
+		http://www.freesfx.co.uk/soundeffects/whistles/horns/
+		http://www.freesfx.co.uk/sfx/referee
+		https://www.freesfx.co.uk/rx2/mp3s/4/16230_1460569503.mp3
+		
+	Thank you!

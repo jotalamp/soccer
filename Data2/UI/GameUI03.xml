@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<element style="none">
+	<attribute name="Name" value="Root" />
+	<attribute name="Size" value="1280 960" />
+	<attribute name="Pivot" value="0 0" />
+	<element type="BorderImage">
+		<attribute name="Name" value="ScoreBoard" />
+		<attribute name="Position" value="20 -70" />
+		<attribute name="Size" value="512 256" />
+		<attribute name="Pivot" value="0 0" />
+		<attribute name="Is Editable" value="false" />
+		<attribute name="Texture" value="Texture2D;Textures/ScoreBoard01.png" />
+		<attribute name="Image Rect" value="0 0 512 256" />
+		<element type="Text">
+			<attribute name="Name" value="homeTeam" />
+			<attribute name="Position" value="91 169" />
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Is Editable" value="false" />
+			<attribute name="Font" value="Font;Fonts/BlueHighway.ttf" />
+			<attribute name="Font Size" value="18" />
+			<attribute name="Text" value="FIN" />
+			<attribute name="Text Effect" value="Stroke" />
+			<attribute name="Round Stroke" value="true" />
+			<attribute name="Effect Color" value="0.9 0.9 0.75 0.2" />
+		</element>
+		<element type="Text">
+			<attribute name="Name" value="awayTeam" />
+			<attribute name="Position" value="394 169" />
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Is Editable" value="false" />
+			<attribute name="Font" value="Font;Fonts/BlueHighway.ttf" />
+			<attribute name="Font Size" value="18" />
+			<attribute name="Text" value="BEL" />
+			<attribute name="Text Effect" value="Stroke" />
+			<attribute name="Round Stroke" value="true" />
+			<attribute name="Effect Color" value="0.9 0.9 0.75 0.2" />
+		</element>
+		<element type="Text">
+			<attribute name="Name" value="homeGoals" />
+			<attribute name="Position" value="207 169" />
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Is Editable" value="false" />
+			<attribute name="Font" value="Font;Fonts/BlueHighway.ttf" />
+			<attribute name="Font Size" value="18" />
+			<attribute name="Text" value="0" />
+			<attribute name="Text Effect" value="Stroke" />
+			<attribute name="Round Stroke" value="true" />
+			<attribute name="Effect Color" value="0.9 0.9 0.75 0.3" />
+		</element>
+		<element type="Text">
+			<attribute name="Name" value="awayGoals" />
+			<attribute name="Position" value="302 169" />
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Top Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Left Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Bottom Right Color" value="0.9 0.9 0.75 1" />
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Is Editable" value="false" />
+			<attribute name="Font" value="Font;Fonts/BlueHighway.ttf" />
+			<attribute name="Font Size" value="18" />
+			<attribute name="Text" value="0" />
+			<attribute name="Text Effect" value="Stroke" />
+			<attribute name="Round Stroke" value="true" />
+			<attribute name="Effect Color" value="0.9 0.9 0.75 0.3" />
+		</element>
+		<element type="Text">
+			<attribute name="Name" value="time" />
+			<attribute name="Position" value="245 130" />
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Color" value="0 0 0.3 1" />
+			<attribute name="Top Left Color" value="0 0 0.3 1" />
+			<attribute name="Top Right Color" value="0 0 0.3 1" />
+			<attribute name="Bottom Left Color" value="0 0 0.3 1" />
+			<attribute name="Bottom Right Color" value="0 0 0.3 1" />
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Is Editable" value="false" />
+			<attribute name="Font" value="Font;Fonts/BlueHighway.ttf" />
+			<attribute name="Font Size" value="18" />
+			<attribute name="Text" value="0:17" />
+			<attribute name="Text Effect" value="Stroke" />
+			<attribute name="Round Stroke" value="true" />
+			<attribute name="Effect Color" value="0.5 0.5 0.5 0.9" />
+		</element>
+	</element>
+	<element type="Sprite" style="Sprite">
+		<attribute name="Name" value="Radar" />
+		<attribute name="Position" value="0 -92" />
+		<attribute name="Size" value="204 144" />
+		<attribute name="Hotspot" value="102 72" />
+		<attribute name="Texture" value="Texture2D;Textures/Soccer/SoccerRadar02.png" />
+		<attribute name="Image Rect" value="0 0 306 216" />
+		<attribute name="Blend Mode" value="alpha" />
+		<attribute name="Horiz Alignment" value="Center" />
+		<attribute name="Vert Alignment" value="Bottom" />
+		<attribute name="Opacity" value="0.6" />
+	</element>
+	<element type="ProgressBar">
+		<attribute name="Name" value="ReplayBar" />
+		<attribute name="Position" value="20 -20" />
+		<attribute name="Size" value="200 16" />
+		<attribute name="Min Anchor" value="0 1" />
+		<attribute name="Max Anchor" value="0 1" />
+		<attribute name="Pivot" value="0 1" />
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Is Editable" value="false" />
+		<attribute name="Image Rect" value="48 0 64 16" />
+		<attribute name="Border" value="4 4 4 4" />
+		<attribute name="Range" value="100" />
+		<element type="BorderImage" internal="true" style="none">
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Image Rect" value="16 0 32 16" />
+			<attribute name="Border" value="4 4 4 4" />
+			<attribute name="Hover Image Offset" value="0 16" />
+		</element>
+		<element type="Text" internal="true" style="none">
+			<attribute name="Name" value="S_Text" />
+			<attribute name="Min Anchor" value="0.5 0.5" />
+			<attribute name="Max Anchor" value="0.5 0.5" />
+			<attribute name="Pivot" value="0.5 0.5" />
+			<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Text" value="0 %" />
+		</element>
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="FPSCounter" />
+		<attribute name="Pivot" value="0 0" />
+		<attribute name="Color" value="0 0 0 1" />
+		<attribute name="Top Left Color" value="0 0 0 1" />
+		<attribute name="Top Right Color" value="0 0 0 1" />
+		<attribute name="Bottom Left Color" value="0 0 0 1" />
+		<attribute name="Bottom Right Color" value="0 0 0 1" />
+		<attribute name="Is Editable" value="false" />
+		<attribute name="Font Size" value="8" />
+		<attribute name="Text" value="FPS: 30" />
+		<attribute name="Text Alignment" value="Center" />
+		<attribute name="Stroke Thickness" value="2" />
+		<attribute name="Round Stroke" value="true" />
+		<attribute name="Effect Color" value="1 1 1 1" />
+	</element>
+	<element type="ProgressBar" style="none">
+		<attribute name="Name" value="PowerBar" />
+		<attribute name="Position" value="500 500" />
+		<attribute name="Size" value="100 8" />
+		<attribute name="Min Size" value="100 2" />
+		<attribute name="Max Size" value="2147483647 11" />
+		<attribute name="Pivot" value="0 0" />
+		<attribute name="Clip Border" value="2 2 2 2" />
+		<attribute name="Opacity" value="0.6" />
+		<attribute name="Color" value="0 0 0 1" />
+		<attribute name="Top Left Color" value="0 0 0 1" />
+		<attribute name="Top Right Color" value="0 0 0 1" />
+		<attribute name="Bottom Left Color" value="0 0 0 1" />
+		<attribute name="Bottom Right Color" value="0 0 0 1" />
+		<attribute name="Is Enabled" value="false" />
+		<attribute name="Is Editable" value="false" />
+		<attribute name="Image Rect" value="0 0 0 1" />
+		<attribute name="Border" value="2 2 2 2" />
+		<attribute name="Image Border" value="2 2 2 2" />
+		<attribute name="Range" value="100" />
+		<attribute name="Value" value="40" />
+		<attribute name="Show Percent Text" value="false" />
+		<element type="BorderImage" internal="true" style="none">
+			<attribute name="Pivot" value="0 0" />
+			<attribute name="Image Rect" value="16 0 32 16" />
+			<attribute name="Border" value="4 4 4 4" />
+			<attribute name="Hover Image Offset" value="0 16" />
+		</element>
+		<element type="Text" internal="true" style="none">
+			<attribute name="Name" value="S_Text" />
+			<attribute name="Min Anchor" value="0.5 0.5" />
+			<attribute name="Max Anchor" value="0.5 0.5" />
+			<attribute name="Pivot" value="0.5 0.5" />
+			<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+			<attribute name="Is Visible" value="false" />
+			<attribute name="Text" value="40 %" />
+		</element>
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="TextCamera" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Text" value="Side Player" />
+	</element>
+</element>

@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="Scene01" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="14561.5" />
+	<attribute name="Next Replicated Node ID" value="25" />
+	<attribute name="Next Replicated Component ID" value="46" />
+	<attribute name="Next Local Node ID" value="16777812" />
+	<attribute name="Next Local Component ID" value="16777747" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="DebugRenderer" id="2" />
+	<component type="PhysicsWorld" id="5" />
+	<node id="16777217">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerGoalAPosts" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="50 0 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777232">
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+			<attribute name="Material" value="Material;Materials/Soccer/SoccerPosts01.xml" />
+			<attribute name="Is Occluder" value="true" />
+			<attribute name="Can Be Occluded" value="false" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="CollisionShape" id="16777250">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+		</component>
+		<component type="RigidBody" id="16777251">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="50 0 0" />
+			<attribute name="Restitution" value="0.9" />
+		</component>
+		<node id="16777258">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="SoccerGoalANet" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="0.707107 -0.707107 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16777285">
+				<attribute name="Model" value="Model;Models/Soccer/Models/SoccerNet04.mdl" />
+				<attribute name="Material" value="Material;Materials/Soccer/SoccerNet02.xml" />
+				<attribute name="Cast Shadows" value="true" />
+			</component>
+			<component type="CollisionShape" id="16777398">
+				<attribute name="Shape Type" value="TriangleMesh" />
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet02T3.mdl" />
+				<attribute name="Collision Margin" value="0.1" />
+			</component>
+			<component type="RigidBody" id="16777400">
+				<attribute name="Physics Position" value="50 0 0" />
+				<attribute name="Collision Event Mode" value="Always" />
+			</component>
+			<node id="16777790">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="SoccerGoalATrigger" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="1.1 1.2 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1.74 2.4 7.3" />
+				<attribute name="Variables" />
+				<component type="CollisionShape" id="16777509" />
+				<component type="RigidBody" id="16777510">
+					<attribute name="Physics Position" value="51.1 1.2 0" />
+					<attribute name="Collision Event Mode" value="Always" />
+					<attribute name="Is Trigger" value="true" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16777247">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerField" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.5 0" />
+		<attribute name="Rotation" value="0.707107 0 0.707107 0" />
+		<attribute name="Scale" value="80 1 110" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777234">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/SoccerField.xml" />
+		</component>
+		<component type="CollisionShape" id="16777248">
+			<attribute name="Size" value="2 1 2" />
+		</component>
+		<component type="RigidBody" id="16777249">
+			<attribute name="Physics Rotation" value="0.707107 0 0.707107 0" />
+			<attribute name="Physics Position" value="0 -0.5 0" />
+			<attribute name="Rolling Friction" value="0.01" />
+			<attribute name="Restitution" value="0.7" />
+		</component>
+	</node>
+	<node id="16777248">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Light01" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 15.5291 0" />
+		<attribute name="Rotation" value="0.794296 0.593132 0.13112 0.00973597" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="16777235">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Specular Intensity" value="0.9" />
+			<attribute name="Brightness Multiplier" value="0.9" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Distance" value="0.1" />
+			<attribute name="Shadow Intensity" value="0.1" />
+		</component>
+	</node>
+	<node id="16777250">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerGoalBPosts" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-50 0 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777254">
+			<attribute name="Model" value="Model;Models/Soccer/SoccerPosts01.mdl" />
+			<attribute name="Material" value="Material;Materials/Soccer/SoccerPosts01.xml" />
+			<attribute name="Is Occluder" value="true" />
+			<attribute name="Can Be Occluded" value="false" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+		<component type="CollisionShape" id="16777255">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Soccer/SoccerNet01.mdl" />
+		</component>
+		<component type="RigidBody" id="16777256">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="-50 0 0" />
+			<attribute name="Restitution" value="0.9" />
+		</component>
+		<node id="16777259">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="SoccerGoalBNet" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="0.00164777 -0.00164777 0.707117 -0.707117" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="16777287">
+				<attribute name="Model" value="Model;Models/Soccer/Models/SoccerNet04.mdl" />
+				<attribute name="Material" value="Material;Materials/Net02.xml" />
+			</component>
+			<component type="CollisionShape" id="16777288">
+				<attribute name="Shape Type" value="TriangleMesh" />
+				<attribute name="Model" value="Model;Models/Soccer/SoccerNet02T3.mdl" />
+				<attribute name="Collision Margin" value="0.2" />
+			</component>
+			<component type="RigidBody" id="16777290">
+				<attribute name="Physics Rotation" value="0.00233027 0 0.999997 0" />
+				<attribute name="Physics Position" value="-50 0 0" />
+				<attribute name="Restitution" value="0.01" />
+				<attribute name="Collision Event Mode" value="Always" />
+			</component>
+			<node id="16777791">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="SoccerGoalBTrigger" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="1.1 1.2 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1.74 2.4 7.3" />
+				<attribute name="Variables" />
+				<component type="CollisionShape" id="16777512" />
+				<component type="RigidBody" id="16777513">
+					<attribute name="Physics Rotation" value="0.00233026 0 0.999997 0" />
+					<attribute name="Physics Position" value="-51.1001 1.20004 -0.0051673" />
+					<attribute name="Collision Event Mode" value="Always" />
+					<attribute name="Is Trigger" value="true" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16777252">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeA" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 40" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="106 1 0.2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777257">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777258" />
+		<component type="RigidBody" id="16777259">
+			<attribute name="Physics Position" value="0 0.5 40" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777253">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeB" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 -40" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="110 1 0.2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777260">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777261" />
+		<component type="RigidBody" id="16777262">
+			<attribute name="Physics Position" value="0 0.5 -40" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777254">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeC" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="55 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.2 1 76" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777263">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777264" />
+		<component type="RigidBody" id="16777265">
+			<attribute name="Physics Position" value="55 0.5 0" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="16777255">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerFieldEdgeD" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-55 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.2 1 76" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777266">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Boards.xml" />
+		</component>
+		<component type="CollisionShape" id="16777267" />
+		<component type="RigidBody" id="16777268">
+			<attribute name="Physics Position" value="-55 0.5 0" />
+			<attribute name="Restitution" value="0.4" />
+		</component>
+	</node>
+	<node id="6">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Box" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Skybox" id="19">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Skybox.xml" />
+		</component>
+	</node>
+	<node id="16777500">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SoccerBall2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0.5 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.001 0.001 0.001" />
+		<attribute name="Variables" />
+		<component type="CollisionShape" id="16777403">
+			<attribute name="Shape Type" value="Sphere" />
+			<attribute name="Size" value="220 220 220" />
+		</component>
+		<component type="RigidBody" id="16777404">
+			<attribute name="Physics Position" value="0 0.5 0" />
+			<attribute name="Mass" value="0.42" />
+			<attribute name="Friction" value="0.9" />
+			<attribute name="Rolling Friction" value="0.01" />
+			<attribute name="Restitution" value="0.9" />
+			<attribute name="Linear Damping" value="0.001" />
+			<attribute name="Angular Damping" value="0.35" />
+			<attribute name="Angular Rest Threshold" value="1.5" />
+			<attribute name="CCD Radius" value="0.1" />
+			<attribute name="CCD Motion Threshold" value="0.1" />
+		</component>
+		<component type="StaticModel" id="16777459">
+			<attribute name="Model" value="Model;Models/soccerBall08.mdl" />
+			<attribute name="Material" value="Material;Materials/White.xml;Materials/Black.xml" />
+			<attribute name="Cast Shadows" value="true" />
+		</component>
+	</node>
+	<node id="24">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Ground" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.52 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="140 0.99 100" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="45">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/Ground.xml" />
+		</component>
+	</node>
+	<node id="16777798">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Stadium" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 -0.02 0" />
+		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+		<attribute name="Scale" value="1.171 1.171 2" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="16777586">
+			<attribute name="Model" value="Model;Models/Stadium02.mdl" />
+			<attribute name="Material" value="Material;Materials/Stadium01.xml" />
+		</component>
+		<component type="CollisionShape" id="16777601">
+			<attribute name="Shape Type" value="TriangleMesh" />
+			<attribute name="Model" value="Model;Models/Stadium02.mdl" />
+		</component>
+		<component type="RigidBody" id="16777602">
+			<attribute name="Physics Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Physics Position" value="0 -0.02 0" />
+		</component>
+	</node>
+</scene>
